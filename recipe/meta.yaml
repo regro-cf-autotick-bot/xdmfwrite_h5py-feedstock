@@ -1,6 +1,6 @@
 {% set org = "tdegeus" %}
 {% set name = "XDMFWrite_h5py" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/{{ org }}/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: fe35a868175b90300ec9f0715edb716642804fa76fb7de7d84233aee49615bcf
+  sha256: 7bc0521e7d6a84d3cb851153eca756f702f2bd37d03dce1d7fd79738d9ca598d
 
 build:
   number: 0
