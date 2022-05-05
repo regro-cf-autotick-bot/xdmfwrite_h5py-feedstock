@@ -1,5 +1,5 @@
-{% set org = "tdegeus" %}
 {% set name = "XDMFWrite_h5py" %}
+{% set org = "tdegeus" %}
 {% set version = "0.1.2" %}
 
 package:
@@ -27,12 +27,13 @@ requirements:
     - h5py
 
 test:
-  imports:
+  requires:
+    - pip
+    imports:
     - {{ name }}
   commands:
     - pip check
-  requires:
-    - pip
+    - python -c "import {{ name }}; print({{ name }}.version)"
 
 about:
   home: https://github.com/{{ org }}/{{ name }}
